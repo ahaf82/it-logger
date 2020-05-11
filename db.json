@@ -1,0 +1,93 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive on workstation",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Sam Smith"
+    },
+    {
+      "id": 2,
+      "message": "Workstation missing",
+      "attention": true,
+      "date": "03-02-2019",
+      "tech": "John Doe"
+    },
+    {
+      "id": 1,
+      "message": "Changed memory",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Mary Moon"
+    },
+    {
+      "name": "haf",
+      "email": "haf@mail.com",
+      "password": "Megagut",
+      "id": 3
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 1,
+      "firstName": "Mary",
+      "lastName": "Moon"
+    },
+    {
+      "firstName": "Sam",
+      "id": 2
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Smith",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sith",
+      "id": 6
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sith",
+      "id": 7
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sith",
+      "id": 8
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sith",
+      "id": 9
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sth",
+      "id": 10
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Sth",
+      "id": 11
+    }
+  ]
+}
