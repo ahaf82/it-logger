@@ -15,17 +15,11 @@
       "tech": "John Doe"
     },
     {
-      "id": 1,
+      "id": 3,
       "message": "Changed memory",
       "attention": false,
       "date": "03-02-2019",
       "tech": "Mary Moon"
-    },
-    {
-      "name": "haf",
-      "email": "haf@mail.com",
-      "password": "Megagut",
-      "id": 3
     }
   ],
   "techs": [
