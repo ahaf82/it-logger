@@ -1,18 +1,18 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "Changed server network 007",
-      "attention": false,
       "tech": "Sam Smith",
-      "date": "2020-05-15T22:31:21.124Z",
-      "id": 1
+      "attention": false,
+      "date": "2020-05-16T19:28:55.260Z"
     },
     {
       "id": 2,
-      "message": "hard drive fixed 003",
-      "tech": "Sam Smith",
+      "message": "hard drive failed 003",
+      "tech": "Mary Moon",
       "attention": false,
-      "date": "2020-05-16T18:15:04.436Z"
+      "date": "2020-05-16T19:55:24.839Z"
     },
     {
       "message": "1122 wireless down",
@@ -20,13 +20,6 @@
       "tech": "John Doe",
       "date": "2020-05-15T22:32:30.368Z",
       "id": 3
-    },
-    {
-      "message": "New message 009",
-      "attention": true,
-      "tech": "Mary Moon",
-      "date": "2020-05-16T17:42:18.133Z",
-      "id": 4
     }
   ],
   "techs": [
@@ -41,9 +34,9 @@
       "lastName": "Doe"
     },
     {
-      "id": 3,
       "firstName": "Mary",
-      "lastName": "Moon"
+      "lastName": "Moon",
+      "id": 3
     }
   ]
 }
