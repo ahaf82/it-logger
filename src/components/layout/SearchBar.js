@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { searchLogs } from '../../actions/logActions';
 
 const SearchBar = ({ searchLogs }) => {
-    const message = useRef('');
+    const text = useRef('');
 
     const onChange = e => {
-        searchLogs(message.current.value)
+        searchLogs(text.current.value)
     }
 
     return (
@@ -15,7 +15,7 @@ const SearchBar = ({ searchLogs }) => {
             <div className="nav-wrapper">
                 <form>
                     <div className="input-field">
-                        <input id="search" type="search" placeholder='Search Logs..' ref={message} onChange={onChange} />
+                        <input id="search" type="search" placeholder='Search Logs..' ref={text} onChange={onChange} />
                         <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
                         <i className="material-icons">close</i>
                     </div>
