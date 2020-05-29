@@ -30,14 +30,14 @@
 	"scripts": {
 		"start": "node server.js",
 		"server": "nodemon server.js",
-		"client": "npm start --prefix client",
-		"clientinstall": "npm install --prefix client",
+		"client": "npm start",
+		"clientinstall": "npm install",
 		"dev": "concurrently \"npm run server\" \"npm start client\"",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 	},
 	"main": "server.js",
 	"eslintConfig": {
