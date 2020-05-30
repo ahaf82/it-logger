@@ -2,7 +2,6 @@
 	"name": "it-logger",
 	"version": "1.0.0",
 	"description": "log app",
-	"private": true,
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
@@ -12,6 +11,9 @@
 		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
 	"devDependencies": {
 		"concurrently": "^5.2.0",
 		"nodemon": "^2.0.3"
@@ -24,20 +26,5 @@
 		"express": "^4.17.1",
 		"express-validator": "^6.5.0",
 		"mongoose": "^5.9.16"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
 	}
 }
