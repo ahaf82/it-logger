@@ -14,7 +14,8 @@ const LogsSchema = mongoose.Schema({
         required: true
     },
     attention: {
-        type: Boolean
+        type: Boolean,
+        required: true
     },
     date: {
         type: Date,
