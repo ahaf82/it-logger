@@ -73,17 +73,17 @@ export const addLog = (log) => async dispatch => {
 }
 
 // Delete log from server
-export const deleteLog = (id) => async dispatch => {
+export const deleteLog = (_id) => async dispatch => {
     try {
         setLoading();
 
-        await fetch(`/logs/${id}`, {
+        await fetch(`/logs/${_id}`, {
             method: 'DELETE'
         });
 
         dispatch({
             type: DELETE_LOG,
-            payload: id
+            payload: _id
         })
     } catch (err) {
         dispatch({
@@ -99,7 +99,7 @@ export const updateLog = (log) => async dispatch => {
     try {
         setLoading();
 
-        const res = await fetch(`/logs/${log.id}`, {
+        const res = await fetch(`/logs/${log._id}`, {
             method: 'PUT',
             body: JSON.stringify(log),
             headers: {

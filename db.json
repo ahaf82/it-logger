@@ -8,18 +8,18 @@
       "date": "2020-05-16T19:28:55.260Z"
     },
     {
-      "id": 2,
-      "message": "hard drive failed 003",
-      "tech": "Mary Moon",
-      "attention": false,
-      "date": "2020-05-16T19:55:24.839Z"
-    },
-    {
       "message": "1122 wireless down",
       "attention": true,
       "tech": "John Doe",
       "date": "2020-05-15T22:32:30.368Z",
       "id": 3
+    },
+    {
+      "message": "New Message 2305",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2020-05-22T22:41:59.390Z",
+      "id": 4
     }
   ],
   "techs": [
@@ -37,6 +37,11 @@
       "firstName": "Mary",
       "lastName": "Moon",
       "id": 3
+    },
+    {
+      "firstName": "Armin",
+      "lastName": "FS",
+      "id": 4
     }
   ]
 }
