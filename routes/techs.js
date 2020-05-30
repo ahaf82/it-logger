@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 
-const Tech = require("../models/techs");
+const Tech = require("../models/Techs");
 
 // @routes    Get techs
 // @desc      Get all techs

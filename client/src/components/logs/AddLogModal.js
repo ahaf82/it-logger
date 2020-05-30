@@ -3,8 +3,7 @@ import TechSelectOptions from '../techs/TechSelectOptions';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import M from 'materialize-css/dist/js/materialize.min.js'
-import AddTechModal from '../techs/AddTechName';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const AddLogModal = ({ addLog }) => {
     const [message, setMessage] = useState('');
