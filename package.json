@@ -8,13 +8,15 @@
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.2.1",
 		"bcryptjs": "^2.4.3",
+		"concurrently": "^5.2.0",
 		"config": "^3.3.1",
 		"express": "^4.17.1",
-		"express-validator": "^6.5.0",
+		"express-validator": "^6.4.1",
 		"jsonwebtoken": "^8.5.1",
 		"materialize-css": "^1.0.0",
 		"moment": "^2.25.3",
-		"mongoose": "^5.9.16",
+		"mongoose": "^5.9.11",
+		"nodemon": "^2.0.4",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-moment": "^0.9.7",
@@ -25,24 +27,31 @@
 		"redux-thunk": "^2.3.0"
 	},
 	"scripts": {
-		"start": "node server.js",
-		"server": "nodemon server.js",
-		"client": "npm start",
-		"clientinstall": "npm install",
-		"dev": "concurrently \"npm run server\" \"npm start client\"",
 		"start": "react-scripts start",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"clientinstall": "npm install --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm start client\"",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"main": "server.js",
 	"eslintConfig": {
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
 	"proxy": "http://localhost:5000"
 }
