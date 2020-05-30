@@ -27,7 +27,6 @@
 		"redux-thunk": "^2.3.0"
 	},
 	"scripts": {
-		"start": "react-scripts start",
 		"server": "nodemon server.js",
 		"client": "npm start --prefix client",
 		"clientinstall": "npm install --prefix client",
