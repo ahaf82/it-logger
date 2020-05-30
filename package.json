@@ -12,17 +12,7 @@
 		"express": "^4.17.1",
 		"express-validator": "^6.5.0",
 		"jsonwebtoken": "^8.5.1",
-		"materialize-css": "^1.0.0",
-		"moment": "^2.25.3",
-		"mongoose": "^5.9.16",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-moment": "^0.9.7",
-		"react-redux": "^7.2.0",
-		"react-scripts": "^3.4.1",
-		"redux": "^4.0.5",
-		"redux-devtools-extension": "^2.13.8",
-		"redux-thunk": "^2.3.0",		
+		"mongoose": "^5.9.16",	
 		"concurrently": "^5.2.0",
 		"nodemon": "^2.0.4"
 	},
@@ -31,11 +21,7 @@
 		"server": "nodemon server.js",
 		"client": "npm start --prefix client",
 		"clientinstall": "npm install --prefix client",
-		"dev": "concurrently \"npm run server\" \"npm start client\"",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
 	},
 	"main": "server.js",
@@ -45,6 +31,5 @@
 	"browserslist": {
 		"production": [ ">0.2%", "not dead", "not op_mini all" ],
 		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
-	},
-	"proxy": "http://localhost:5000"
+	}
 }
