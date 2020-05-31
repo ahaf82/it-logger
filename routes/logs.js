@@ -20,9 +20,27 @@ router.get("/", async (req, res) => {
   }
 });
 
+// @routes    Search logs
+// @desc      Search and Filter logs
+// @access    Public
+router.get("/:q", async (req, res) => {
+  try {
+    const logs = await Log.find({ logs: req._id }).sort({
+      date: -1,
+    });
+    let searchContent = logs.filter(item => {
+      let regex = new RegExp(req.params.q, 'gi');
+      return item.message.match(regex) || item.tech.match(regex);
+    });
+    res.json(searchContent);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send("Server Error");
+  }
+});
 
-// @routes    POST log
-// @desc      Post a log message
+// @routes    ADD log
+// @desc      Add a log message
 // @access    Public
 router.post('/', [
   check('message', 'Please enter a message').not().isEmpty(),
@@ -47,14 +65,7 @@ router.post('/', [
 
       await log.save();
 
-      const payload = {
-        log: {
-
-          id: log.id
-        }
-      }
-
-      res.send({ payload });
+      res.send(log);
 
     } catch (err) {
       console.error(err.message);
